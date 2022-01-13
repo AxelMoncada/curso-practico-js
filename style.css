@@ -1,0 +1,77 @@
+
+  
+ 
+
+body {
+    text-align: center;
+    background-image: radial-gradient(circle at 50% -20.71%, #cfa8ff 0, #9d8bff 25%, #6c6cd8 50%, #3f4ea4 75%, #153375 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 750px; 
+
+
+    line-height: 1.5;
+	
+	font-family: "Outfit", sans-serif;
+	
+	
+}
+#calculadora{
+    display: flex;
+}
+.cuadrado {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    padding: 10px;
+    width: 30%;
+    padding: 20px 9px 20px 25px;    
+    margin: 15px;
+    text-align: center;
+    border-radius: 35px 35px 35px 35px;
+-moz-border-radius: 35px 35px 35px 35px;
+-webkit-border-radius: 35px 35px 35px 35px;
+border: 0px solid #000000;
+}
+
+.imagen{
+    filter: invert(1) ;
+    width: 200px;
+
+}
+.imagen2{
+    filter:   brightness(150%);
+    width: 200px;
+
+}
+.Triangulo {
+    color: white;
+    background:black;
+    padding: 10px;
+    width: 30%;
+    padding: 20px 9px 20px 25px;   
+    margin: 15px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 35px 35px 35px 35px;
+    -moz-border-radius: 35px 35px 35px 35px;
+    -webkit-border-radius: 35px 35px 35px 35px;
+    border: 0px solid #000000;
+    
+}
+.circulo {
+    color: white;
+    background:black;
+    padding: 20px 9px 20px 25px;
+    width: 30%;
+    margin: 15px ;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 35px 35px 35px 35px;
+    -moz-border-radius: 35px 35px 35px 35px;
+    -webkit-border-radius: 35px 35px 35px 35px;
+    border: 0px solid #000000;
+    
+}
+
