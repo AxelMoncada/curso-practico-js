@@ -1,10 +1,10 @@
   //Lineas PRECIOS Y DESCUENTOS
 console.group("precios")
   const precioOriginal= 120;
-  const descuento=18;
+  const descuentoinicial=18;
 
-  function calcularPrecioConDescuento(precio,descuento){
-    const porcentajePrecioConDescuento = 100 - descuento;
+  function calcularPrecioConDescuento(precio,descuentoinicial){
+    const porcentajePrecioConDescuento = 100 - descuentoinicial;
     const precioConDescuento = (precio * porcentajePrecioConDescuento)/100;
 
         return precioConDescuento;
@@ -36,7 +36,7 @@ console.group("precios")
 
     const inputCupon = document.getElementById ("InputCupon");
     const Cupon = inputCupon.value;
-  }
+  
 
 
     let descuento;
@@ -58,9 +58,10 @@ console.group("precios")
     case coupons[undefined]:
     descuento ="Cupon no existe";
     break;
+    }
+  
 
-
-if (descuento === undefined) {
+if (descuento == undefined) {
     const resultp = document.getElementById("ResultP");
     resultp.innerText="El cupon: "+ Cupon + ", No existe";
 
@@ -69,4 +70,4 @@ const precioConDescuento = calcularPrecioConDescuento(priceValue,descuento);
       const resultp = document.getElementById("ResultP");
       resultp.innerText="El precio con descuento son: $"+ precioConDescuento;
     }; 
-  }
+}
