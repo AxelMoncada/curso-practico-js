@@ -137,6 +137,8 @@
         const area = areaCirculo(valorRadio);
         alert(area);
     }
+
+  
    
 
 

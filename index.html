@@ -84,9 +84,28 @@
             </form>
         </div>
     </section>
+    <div class="precio">
+        <h2> Precios y Descuentos</h2>
+        <form>
+            <label for="InputPrice"> Escribe el precio total  </label>
+            <br>
+            <input id="InputPrice" type="number" placeholder="Ingresa el precio total"/>
+            <br>        
 
-    <script src="./figuras.js">
+            <label for="InputCupon">Ingresa el cupon de descuento</label> 
+            <br>
+            <input id="InputCupon"  placeholder="Ingresa el cupon"/>
+            <br>
 
-    </script>
+            <button type="button" class="boton" onclick="BotonCupon()"> 
+                Calcular precio
+            </button>
+            <p id="ResultP"></p>
+        </form>
+
+    </div>
+
+    <script src="./figuras.js"></script>
+    <script src="./descuentos.js"></script>
 </body>
 </html>
