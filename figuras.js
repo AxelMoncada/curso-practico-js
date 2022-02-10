@@ -28,6 +28,16 @@
 
     console.groupEnd();
 
+function calculaisoceles(ladoa,ladob,base){
+    if (ladoa === ladob && base != ladoa){
+        const altura= Math.sqrt(ladoa**2 - base**2/ 4)
+
+        return altura;
+    }else {
+         alert ("No es isoceles");
+        }
+
+}
 
 //Codigo del Circulo
     console.group("Circulos");
@@ -117,6 +127,23 @@
         const area = areaTriangulo(valorbase,valorAltura);
         
         alert(area);
+
+    }
+
+    function calculartrianguloequilatero() {
+        const ladoa =document.getElementById("Inputladoa");
+        const valorladoa = Number(ladoa.value);
+
+        const ladob =document.getElementById("Inputladob");
+        const valorladob = Number(ladob.value);
+
+        const base =document.getElementById("Inputbase");
+        const valorbase = Number(base.value);
+
+        alturafinal = calculaisoceles (valorladoa,valorladob,valorbase);
+
+        alert(alturafinal);
+
 
     }
 
