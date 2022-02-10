@@ -164,6 +164,8 @@ function calculaisoceles(ladoa,ladob,base){
         const area = areaCirculo(valorRadio);
         alert(area);
     }
+
+  
    
 
 
