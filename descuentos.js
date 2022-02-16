@@ -68,6 +68,6 @@ if (descuento == undefined) {
 }else {
 const precioConDescuento = calcularPrecioConDescuento(priceValue,descuento);
       const resultp = document.getElementById("ResultP");
-      resultp.innerText="El precio con descuento son: $"+ precioConDescuento;
+      resultp.innerText="El precio con descuento son: $"+ precioConDescuento + " El cupon de descuento es de " + descuento +"%";
     }; 
 }
