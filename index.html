@@ -24,7 +24,8 @@
                     Escribe cuánto mide cada lado de tu cuadrado:
                 </label>
                 <input id="InputCuadrado" type="number" size="5" placeholder="Ingresa valor"> <br>
-                <button type="button" class="boton" onclick="calcularPerimetroCuadrado()">
+
+                <button type="button" class="boton scale-up-center " onclick="calcularPerimetroCuadrado()">
                     Calcular el perímetro
                 </button>
                 <button type="button" class="boton" onclick="calcularAreaCuadrado()" >
@@ -66,6 +67,34 @@
                 </button>
             </form>
         </div>
+
+       <div class="Triangulo">
+            <img class="imagen" src="imagenes/triangulo.png"> 
+            <h2>Calcula la altura de un Triangulo isoceles</h2>
+            <form>
+                <label for="Inputladoa">
+                    Escribe cuánto mide cada lado A de tu triangulo:
+                </label>
+                <input id="Inputladoa" type="number" placeholder="Ingresa valor"><br>
+
+                <label for="Inputladob">
+                    Escribe cuánto mide cada lado B de tu triangulo:
+                </label>
+                <input id="Inputladob" type="number" placeholder="Ingresa valor"><br>
+
+                <label for="Inputbase">
+                    Escribe cuánto mide la base de tu triangulo:
+                </label><br>
+                <input id="Inputbase" type="number" placeholder="Ingresa valor"><br>
+
+                              
+                <button type="button" class="boton" onclick="calculartrianguloequilatero()">
+                    Calcular la altura 
+                </button>
+                           </form>
+        </div>
+
+
 
         <div class="circulo">
             <img class="imagen2" src="imagenes/esfera.png"> 
