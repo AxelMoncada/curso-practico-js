@@ -1,34 +1,37 @@
 
+    
+
+function calcularPromedio () {
     const lista = document.getElementById("InputPromedio");
-
-function calcularPromedio (iterable) {
-    let listaInput = lista.value;
-    let resultado = 
+    const listavalor = lista.value;
+    const listafinal = listavalor.split(',');
+    const listafinalnumeros = listafinal.map(Number);
    
 
-   
-    
-    console.log (" cadena final" + lista);
-    
+    console.log( listafinalnumeros);
+
+     const promedio = calcularMediaAritmetica(listafinalnumeros);
+
+     
+     const resultadopromedio =document.getElementById("PromedioResultado");
+     resultadopromedio.innerHTML =" El promedio es " + promedio 
 }
 
 
-  
-
-function calcularMediaAritmetica(listaInput){
+  function calcularMediaAritmetica(listafinal){
     
 //    let sumaLista = 0;
 //for (let i = 0; i < lista.length; i++){
 //    sumaLista = sumaLista + lista[i];
 //}
 
-const sumaLista = lista.reduce(
+const sumaLista = listafinal.reduce(
     function (valorAcumulado = 0, nuevoElemento)  {
         return valorAcumulado + nuevoElemento;
     }
 );
 
-const promedioLista = sumaLista /lista.length;
+const promedioLista = sumaLista /listafinal.length;
 
 return promedioLista
 

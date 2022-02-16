@@ -137,7 +137,7 @@
     <section class="price-table" id="calculadora">
         <div class="cuadrado" >
            
-            <h2>Calcula la media</h2>
+            <h2>Calcula el promedio</h2>
             <form>
                 <label for="InputPromedio">
                     Introduce tu conjunto de números para calcular el promedio:
@@ -146,22 +146,24 @@
                 <button type="button" class="boton" onclick="calcularPromedio()" >
                     Calcular
                 </button>
+                <p id="PromedioResultado"></p>
             </form>
         </div>
 
         <div class="Triangulo">
            
-            <h2>Calcula la mediana</h2>
+            <h2>Calcula la media</h2>
             <form>
-                <label for="InputTrianguloA">
+                <label for="InputMediana">
                     Introduce tu conjunto de números para calcular la mediana 
                 </label>
-                <input id="InputTrianguloA" type="number" placeholder="Ej. 1,2,3 ..."><br>
+                <input id="InputMediana" placeholder="Ej. 1,2,3 ..."><br>
 
                              
-                <button type="button" class="boton" onclick="calcularPerimetroTriangulo()">
+                <button type="button" class="boton" onclick="calcularMediana()">
                     Calcular
                 </button>
+                <p id="ResultadoMediana"></p>
                 
             </form>
         </div>
@@ -170,13 +172,14 @@
            
             <h2>Calcula la moda</h2>
             <form>
-                <label for="InputCirculo">
+                <label for="InputModa">
                     Introduce tu conjunto de números para calcular la moda de los datos
                 </label><br>
-                <input id="InputCirculo" type="number" placeholder="Ingresa valor"><br>
-                <button type="button" class="boton" onclick="calcularPerimetroTriangulo()">
+                <input id="InputModa"  placeholder="Ej. 1,2,3 ..."><br>
+                <button type="button" class="boton" onclick="calcularModa()">
                     Calcular
                 </button>
+                <p id="ModaFinal"></p>
                 
             </form>
         </div>

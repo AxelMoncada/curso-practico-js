@@ -1,28 +1,13 @@
-function calcularMediaAritmetica(lista){
-    
-    //    let sumaLista = 0;
-    //for (let i = 0; i < lista.length; i++){
-    //    sumaLista = sumaLista + lista[i];
-    //}
-    
-    const sumaLista = lista.reduce(
-        function (valorAcumulado = 0, nuevoElemento)  {
-            return valorAcumulado + nuevoElemento;
-        }
-    );
-    
-    const promedioLista = sumaLista /lista.length;
-    
-    return promedioLista
-    
-    }
- 
+
  const lista1 = [
      100,
      800,
      500,
+     62,
      4000000,
  ];
+
+ function CalcularMedianaAritmetica (lista1){
 
  const listaordenada = lista1.sort(function(a,b){
      return a - b
@@ -50,9 +35,27 @@ function calcularMediaAritmetica(lista){
      ]);
 
      mediana = promedio1y2
+     return mediana
 
 
 
  }else{
     mediana = lista1 [mitadLista1];
+    return mediana
  }
+
+}
+
+ function calcularMediana(){
+    const valoresinput = document.getElementById("InputMediana");
+    const valoresinputvalue =valoresinput.value;
+    const valoresinputseparados = valoresinputvalue.split(',');
+    const valoresfinales = valoresinputseparados.map(Number);
+
+    console.log(valoresfinales)
+
+    const resultadomedia = CalcularMedianaAritmetica(valoresfinales);
+
+    const resultadomediatexto=document.getElementById("ResultadoMediana");
+    resultadomediatexto.innerHTML = "La mediana es " + resultadomedia ;
+}

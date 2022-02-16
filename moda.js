@@ -1,19 +1,19 @@
+function calcularModa () {
+    const valorinput = document.getElementById("InputModa");
+    const inputmodavalue= valorinput.value;
+    const Modasplit = inputmodavalue.split(',');
+    const ModaNum = Modasplit.map(Number);
 
+    console.log(ModaNum)
 
-const lista1Moda = [
-    1,
-    2,
-    3,
-    1,
-    2,
-    3,
-    4,
-    2,
-    2,
-    2,
-    1,
+    const operacion = Operacionmoda(ModaNum);
 
-];
+    const Printhtml = document.getElementById("ModaFinal");
+    Printhtml.innerHTML = "La moda final es " + operacion;
+
+}
+
+function Operacionmoda (lista1Moda) {
 
 const lista1Count = {};
     lista1Moda.map(
@@ -35,3 +35,6 @@ const lista1Count = {};
     );
 
     const moda = lista1Array[lista1Array.length - 1]
+    const modafinal = parseInt(moda);
+        return modafinal
+}
