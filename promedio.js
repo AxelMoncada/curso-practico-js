@@ -20,10 +20,6 @@ function calcularPromedio () {
 
   function calcularMediaAritmetica(listafinal){
     
-//    let sumaLista = 0;
-//for (let i = 0; i < lista.length; i++){
-//    sumaLista = sumaLista + lista[i];
-//}
 
 const sumaLista = listafinal.reduce(
     function (valorAcumulado = 0, nuevoElemento)  {
